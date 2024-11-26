@@ -1,4 +1,4 @@
-nums: int = range(1 , 1000)
+nums = range(1 , 1000)
 
 def isPrime(num: int) -> bool:
     for x in range(2 , num):
@@ -6,7 +6,19 @@ def isPrime(num: int) -> bool:
             return False
     return True
 
-primes: filter = filter(isPrime, nums)
+def isEven(num: int) -> bool:
+    if (num % 2) != 0:
+        return False
+    return True
 
+# filter returns a memory efficient object 
+# filter(function or none, iterable)
+primes = filter(isPrime, nums)
 
+# print(primes)
 print(list(primes))
+
+evens = filter(isEven, nums)
+
+# print(evens)
+print(list(evens))
