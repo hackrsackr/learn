@@ -1,0 +1,37 @@
+primitive types
+
+zig         c
+i8          int8_t
+u8          uint8_t
+i16         int16_t
+u16         uint16_t
+i32         int32_t
+u32         uint32_t
+i64         int64_t
+u64         uint64_t
+i128        int128_t
+u128        uint128_t
+isize       intptr_t
+usize       uintptr_t, size_t
+c_char      char
+c_short     short
+c_long      long
+c_ulong     unsigned long
+c_longlong      long long
+c_ulonglong     unsigned long long
+c_longdouble    long double
+f16             _Float16
+f32             float
+f64             double
+f80             long double
+f128             _Float128
+bool            bool
+anyopaque       void
+void            (none) always the value void{}
+noreturn        (none)
+type            (none)
+anyerror        (none)
+comptime_int    (none)
+comptime_float  (none)
+
+
