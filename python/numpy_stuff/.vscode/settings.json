@@ -1,19 +1,15 @@
 {
     // Python settings
     "[python]": {
-        "editor.formatOnSave": true
+        "editor.formatOnSave": true,
+        "editor.defaultFormatter": "charliermarsh.ruff"
     },
-    "python.autoComplete.extraPaths": [
-        "/home/rob/learn/python/.venv/lib",
-        "/.venv/lib"
-    ],
     "python.defaultInterpreterPath": "${workspaceFolder}/.venv/bin/python",
     "python.envFile": "${workspaceFolder}/.env",
     "python.terminal.activateEnvInCurrentTerminal": true,
     "python.terminal.activateEnvironment: true": true,
     "python.languageServer": "Pylance",
     "python.analysis.autoSearchPaths": true,
-    "python.analysis.typeCheckingMode": "standard",
     "python.testing.unittestEnabled": false,
     "python.testing.pytestEnabled": true,
     "python.testing.cwd": "${workspaceFolder}/tests",
@@ -23,7 +19,7 @@
         "reportMissingImports": "none"
     },
     "python.analysis.extraPaths": [
-        "/home/rob/learn/python/.venv/lib"
+        "${workspaceFolder}/"
     ],
     "python.testing.pytestArgs": [
         "."
